@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form action="">
+        <div class="name">
+            <h2>Name: </h2>
+            <input type="text" name="" id="first-name" placeholder="first-name">
+            <input type="text" name="" id="last-name" placeholder="last-name">
+        </div>
+        <div class="address">
+            <h2>Address: </h2>
+            <select name="" id="city">
+                <option name="address" value="tel-aviv">Tel Aviv</option>
+                <option name="address" value="ramat-gan">Ramat Gan</option>
+                <option name="address" value="Jerusalem">Jerusalem</option>
+                <option name="address" value="haifa">Haifa</option>
+                <option name="address" value="beer-sheva">Beer Sheva</option>
+            </select>
+            <input type="text" name="" id="street" placeholder="street">
+            <input type="text" name="" id="zipcode" placeholder="zipcode">
+        </div>
+        <div class="item">
+            <h2>Item: </h2>
+            <select name="" id="item" onchange="returnPrice()">
+                <option name="address" value="dog">Dog</option>
+                <option name="address" value="cat">Cat</option>
+                <option name="address" value="giraff">Giraff</option>
+            </select>
+            <input type="text" name="" id="item-num" placeholder="number of items">
+            <input type="text" name="" id="item-price" placeholder="price of items">
+            <input type="text" name="" id="total-price" placeholder="total price">
+        </div>
+        <input type="button" value="Submit" onclick="buildObject()">
+        <input type="reset" value="reset">
+    </form>
+    <script src="script.js"></script>
+</body>
+
+</html>
